@@ -1,0 +1,113 @@
+.signup-page {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.signup-label {
+	font-size: 0.8rem;
+	margin-left: 3px;
+	color: rgb(25, 25, 25);
+	font-weight: bold;
+}
+.signup-main {
+	border-radius: 40px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	max-width: 500px;
+	background: transparent;
+	backdrop-filter: blur(4px);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px 60px;
+	margin: 50px auto;
+}
+.signup-main-header {
+	p {
+		font-size: 0.85rem;
+		color: rgb(25, 25, 25);
+	}
+	h1 {
+		font-size: 2rem;
+		color: rgb(25, 25, 25);
+	}
+}
+.name-surname,
+.location {
+	max-width: 400px;
+}
+.signup-textbox-cnt {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	max-width: 400px;
+}
+.signup-form {
+	display: grid;
+}
+.name-surname {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+}
+.signup-textbox {
+	height: 35px;
+	font-size: 0.9rem;
+	padding-left: 15px;
+	margin-top: 5px;
+	border-radius: 12px;
+	max-width: 400px;
+	border: 2px solid #e7e7e9;
+	&:hover {
+		border: 2px solid #e7e7e9;
+		box-shadow: 0 0 3px 3px rgb(255, 118, 218, 0.15);
+		transition: 0.2s;
+	}
+	&:focus {
+		border: 2px solid #e7e7e9;
+		box-shadow: 0 0 3px 3px rgb(255, 118, 218, 0.15);
+	}
+}
+.location {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+}
+.signup-button {
+	background-color: rgb(25, 25, 25);
+	color: #fff;
+	margin-top: 25px;
+	width: 330px;
+	height: 60px;
+	border-radius: 40px;
+	font-size: 1.2rem;
+	border: 0;
+	font-weight: bold;
+	&:hover {
+		background-color: rgb(25, 25, 25, 0.2);
+		color: rgb(25, 25, 25);
+		cursor: pointer;
+		transition: 0.3s;
+	}
+}
+.signup-forgot {
+	margin-left: 10px;
+	margin-top: 5px;
+	font-size: 0.75rem;
+	color: rgb(25, 25, 25);
+	text-decoration: underline;
+	&:hover {
+		color: rgb(0, 0, 172);
+	}
+}
+.d-signup-checkbox {
+	max-width: 300px;
+	margin-top: 20px;
+	font-size: 0.9rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
