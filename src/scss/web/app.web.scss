@@ -1,84 +1,130 @@
-@import 'login.web';
-@import 'signup.web';
+@import "login.web";
+@import "signup.web";
 
-.App{
+.App {
   margin: 0px;
 }
 
-*{
-  font-family: Kollektif,arial,sans-serif;
+* {
+  font-family: Kollektif, arial, sans-serif;
   /* font-family: Founders Grotesk, arial, sans-serif; */
 }
 
-nav{
-  margin: 15px 45px;
-  display:flex;
+nav {
+  display: flex;
   align-items: center;
+  padding: 4px 32px;
 }
 
-.nav-buttons{
+.nav-buttons {
   margin-left: auto;
   align-items: center;
   justify-content: center;
+  height: 50px;
 }
 
-.nav-logo{
+.nav-logo {
   font-size: 1.2rem;
 }
 
-.sue{
-  color: rgb(0,0,0, .40);
+.sue {
+  color: rgb(0, 0, 0, 0.4);
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
 
-.casey{
+.casey {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
 
-.nav-buttons button{
+.nav-buttons button {
   margin-left: 10px;
   background-color: white;
   border-radius: 25px;
   height: 38px;
-  font-size: .95rem;
+  font-size: 0.95rem;
 }
 
-.nav-button-1{
+.nav-button-1 {
   width: 110px;
 }
 
-.nav-button-1 a{
+.nav-button-1 a {
   text-decoration: none;
   color: black;
 }
 
-.nav-buttons button:hover{
+.nav-button-2:hover {
   background-color: black;
-  color: rgb(255,255,255, .95);
+  color: rgb(255, 255, 255, 0.95);
   transition: 0.2s;
   cursor: pointer;
 }
 
-.nav-buttons button:hover a{
-  color: rgb(255,255,255, .95);
+.dropdown-button{
+  display: flex;
+  flex-direction: column;
+  button{
+    margin-left: auto;
+    width: 40px;
+  }
 }
 
-.nav-button-2{
-  width:40px;
+.dropdown-menu {
+  border-radius: 25px 0px 25px 25px;
+  box-shadow: 4px 4px 12px 4px rgba(0, 0, 0, 0.2);
+  padding-right: 16px;
+  z-index: 1;
+  right: 35px;
+  transition: .25s display;
+  visibility: hidden;
+  background-color: #fff;
+  .dropdown-content {
+    padding: 1px 16px;
+    width: 100%;
+    ul {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+      li {
+        white-space: nowrap;
+        a {
+          text-decoration: none;
+          cursor: pointer;
+          color: rgb(25, 25, 25);
+          width: 100%;
+          &:hover {
+            color: rgb(25,25,25, .75)
+          }
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
 }
 
-.header{
-  display:flex;
+.nav-buttons .nav-button-2 a {
+  color: rgb(255, 255, 255, 0.95);
+}
+
+.dropdown-menu {
+  position: relative;
+}
+
+.header {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 45px;
 }
 
-.header-row-1{
+.header-row-1 {
   margin-top: 60px;
   font-size: 2.5rem;
   font-weight: 800;
@@ -86,102 +132,102 @@ nav{
   margin-left: 45px;
 }
 
-.header-row-1 h1{
+.header-row-1 h1 {
   font-weight: 700;
 }
 
-.header-row-2{
-  display:grid;
+.header-row-2 {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
 }
 
-.header-row-2 img{
+.header-row-2 img {
   filter: grayscale(100);
   max-width: 150px;
   max-height: 37px;
 }
 
-.header-row-2 div{
+.header-row-2 div {
   width: 250px;
 }
 
-.main{
+.main {
   margin-top: 80px;
   margin-left: 45px;
   margin-right: 45px;
   margin-bottom: 100px;
 }
 
-.main-1{
+.main-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.ceo-of{
-  color: rgb(0,0,0, .50)
+.ceo-of {
+  color: rgb(0, 0, 0, 0.5);
 }
 
-.main-column-1{
+.main-column-1 {
   font-size: 2.2rem;
 }
 
-.main-column-2{
-  display:grid;
+.main-column-2 {
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
-.tt{
-  color: rgb(0,0,0, .40)
+.tt {
+  color: rgb(0, 0, 0, 0.4);
 }
-.main-column-2-row-2{
+.main-column-2-row-2 {
   margin-top: 10px;
   margin-left: 15px;
 }
 
-.main-column-2 img{
+.main-column-2 img {
   border-radius: 50%;
   width: 50px;
   height: 50px;
   margin-right: 10px;
 }
 
-.client-info{
-  display:flex;
+.client-info {
+  display: flex;
   max-width: 200px;
   align-items: center;
 }
 
-.article{
+.article {
   margin-bottom: 25px;
   font-size: 1.4rem;
   letter-spacing: 0;
   word-spacing: 0;
 }
 
-.client-info p{
+.client-info p {
   font-size: 1rem;
   margin: 8px 0;
 }
 
-.design-card{
- max-width: 370px;
- max-height: 330px;
- margin: 0 auto;
+.design-card {
+  max-width: 370px;
+  max-height: 330px;
+  margin: 0 auto;
 }
 
-.d-c-image img{
+.d-c-image img {
   width: 370px;
   height: 300px;
   border-radius: 10px;
 }
 
-.d-c-image{
+.d-c-image {
   position: relative;
 }
 
-.img-description{
+.img-description {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -189,168 +235,169 @@ nav{
   right: 0;
   visibility: hidden;
   opacity: 0;
-  background: rgb(25,25,25);
-  background: linear-gradient(0deg, rgb(25, 25, 25) 0%, rgba(255,255,255,0) 79%);
+  background: rgb(25, 25, 25);
+  background: linear-gradient(0deg, rgb(25, 25, 25) 0%, rgba(255, 255, 255, 0) 79%);
   border-radius: 10px;
   width: 370px;
   height: 300px;
   display: flex;
 }
 
-.img-description p{
+.img-description p {
   margin-top: auto;
   margin-bottom: 10px;
   justify-self: end;
   margin-left: 20px;
   margin-bottom: 40px;
-  color: #fff
+  color: #fff;
 }
 
-.d-c-image:hover .img-description{
+.d-c-image:hover .img-description {
   visibility: visible;
   opacity: 1;
-  transition: opacity .2s, visibility .2s;
+  transition:
+    opacity 0.2s,
+    visibility 0.2s;
   cursor: pointer;
 }
 
-.d-c-image{
+.d-c-image {
   margin-bottom: 8px;
 }
 
-.d-c-footer{
+.d-c-footer {
   margin: 0px 5px;
   max-width: 370px;
   display: flex;
-  font-size: .91rem;
+  font-size: 0.91rem;
 }
 
-.like-count{
-  color: rgb(0,0,0, .58);
+.like-count {
+  color: rgb(0, 0, 0, 0.58);
   margin-left: auto;
 }
 
-.view-count{
-  color: rgb(0,0,0, .58);
+.view-count {
+  color: rgb(0, 0, 0, 0.58);
   margin-left: 20px;
 }
 
-.fa-circle{
-  color: rgb(0,0,0, .30);
+.fa-circle {
+  color: rgb(0, 0, 0, 0.3);
   margin-right: 4px;
 }
 
-.main-column-3{
+.main-column-3 {
   align-items: center;
   justify-content: center;
   margin-top: 100px;
 }
 
-.design-cards-row-1{
-  display:flex;
+.design-cards-row-1 {
+  display: flex;
 }
 
-.design-cards-row-2{
+.design-cards-row-2 {
   margin-top: 50px;
-  display:flex;
+  display: flex;
 }
 
-.design-list-ul{
+.design-list-ul {
   list-style: none;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.design-li{
+.design-li {
   margin-top: 30px;
 }
 
-.footer-1{
-  display:flex;
+.footer-1 {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer{
+.footer {
   padding-top: 10px;
   padding-left: 150px;
   padding-right: 150px;
-  background-color: rgb(0,0,0, .02);
+  background-color: rgb(0, 0, 0, 0.02);
   margin: 0;
 }
 
-.footer-logo{
+.footer-logo {
   margin-right: auto;
   font-size: 1.1rem;
 }
 
-
-.footer-links{
+.footer-links {
   margin: 0 auto;
 }
 
-.footer-links button{
+.footer-links button {
   margin: 0 25px;
   border: rgb(25, 25, 25), solid;
   background: transparent;
   border: none;
-  font-size: .9rem;
+  font-size: 0.9rem;
   padding: 12px 17px;
   border-radius: 25px;
 }
 
-.footer-links button a{
+.footer-links button a {
   text-decoration: none;
-  color:rgb(25, 25, 25);
+  color: rgb(25, 25, 25);
 }
 
-.footer-links a:hover{
-  color: rgb(25, 25, 25, .75)
+.footer-links a:hover {
+  color: rgb(25, 25, 25, 0.75);
 }
 
-.footer-social-media{
+.footer-social-media {
   margin-left: auto;
 }
 
-.footer-social-media i{
+.footer-social-media i {
   margin: 0 8px;
   font-size: 1.5rem;
 }
 
-.footer-2{
+.footer-2 {
   display: flex;
   margin-top: 60px;
-  color: rgb(0,0,0, .55);
+  color: rgb(0, 0, 0, 0.55);
   margin-bottom: 30px;
-  font-size: .91rem;
+  font-size: 0.91rem;
 }
 
-.footer-2 a{
+.footer-2 a {
   text-decoration: none;
-  color: rgb(0,0,0, .55);
+  color: rgb(0, 0, 0, 0.55);
 }
 
-.footer-2 a:hover{
-  color: rgb(0,0,0, .80)
+.footer-2 a:hover {
+  color: rgb(0, 0, 0, 0.8);
 }
 
-.footer-2-links-1{
+.footer-2-links-1 {
   margin-left: 30px;
 }
 
-.footer-2-links-1 a{
+.footer-2-links-1 a {
   margin-left: 15px;
 }
 
-.footer-2-links-2{
+.footer-2-links-2 {
   margin-left: auto;
 }
 
-.footer-2-links-2 a{
+.footer-2-links-2 a {
   margin-left: 15px;
 }
 
-.login-page{
+.login-page {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -362,7 +409,12 @@ nav{
 .login-main {
   /* border: 1px solid black; */
   border-radius: 40px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
   max-width: 500px;
   background: transparent;
   backdrop-filter: blur(4px);
@@ -374,47 +426,49 @@ nav{
   margin: 100px auto;
 }
 
-.login-main-header p{
-  font-size: .85rem;
-  color: rgb(25,25,25)
+.login-main-header p {
+  font-size: 0.85rem;
+  color: rgb(25, 25, 25);
 }
 
-.login-main-header h1{
+.login-main-header h1 {
   font-size: 2rem;
-  color: rgb(25,25,25)
+  color: rgb(25, 25, 25);
 }
 
-#login-form{
+#login-form {
   display: flex;
   flex-direction: column;
 }
 
-#login-username, #login-password{
+#login-username,
+#login-password {
   height: 35px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   padding-left: 15px;
   margin-top: 5px;
   border-radius: 12px;
   max-width: 400px;
-  border: 2px solid #e7e7e9
-}
-
-#login-username:hover, #login-password:hover{
   border: 2px solid #e7e7e9;
-  box-shadow: 0 0 3px 3px rgb(255, 118, 218, .15);
-  transition: .2s;
 }
 
-.login-label{
-  font-size: .8rem;
+#login-username:hover,
+#login-password:hover {
+  border: 2px solid #e7e7e9;
+  box-shadow: 0 0 3px 3px rgb(255, 118, 218, 0.15);
+  transition: 0.2s;
+}
+
+.login-label {
+  font-size: 0.8rem;
   margin-left: 3px;
   color: rgb(25, 25, 25);
   font-weight: bold;
 }
 
-#login-button{
-  background-color: rgb(25, 25, 25); 
-  color: #fff; 
+#login-button {
+  background-color: rgb(25, 25, 25);
+  color: #fff;
   margin-top: 25px;
   width: 330px;
   height: 60px;
@@ -424,26 +478,26 @@ nav{
   font-weight: bold;
 }
 
-#login-button:hover{
-  background-color: rgb(25,25,25, .2);
-  color: rgb(25,25,25);
+#login-button:hover {
+  background-color: rgb(25, 25, 25, 0.2);
+  color: rgb(25, 25, 25);
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.login-forgot{
+.login-forgot {
   margin-left: 10px;
   margin-top: 5px;
-  font-size: .75rem;
-  color: rgb(25,25,25);
+  font-size: 0.75rem;
+  color: rgb(25, 25, 25);
   text-decoration: underline;
 }
 
-.login-forgot:hover{
-  color:rgb(0, 0, 172);
+.login-forgot:hover {
+  color: rgb(0, 0, 172);
 }
 
-.hamburger-menu-cnt{
+.hamburger-menu-cnt {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -456,64 +510,64 @@ nav{
   row-gap: 35px;
   margin: 40px auto;
   place-items: center;
-  position: absolute;  
-  background-color: rgb(255,255,255);
+  position: absolute;
+  background-color: rgb(255, 255, 255);
   padding-bottom: 20px;
   right: 0;
   width: 100%;
-  box-shadow: 0px 10px 10px rgb(0,0,0, .30);
-  animation: hamburgerMenuSlideDown .45s ease-in-out;
+  box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.3);
+  animation: hamburgerMenuSlideDown 0.45s ease-in-out;
 }
 
-.hamburger-menu ul li{
+.hamburger-menu ul li {
   font-size: 1.1rem;
   letter-spacing: 2px;
   position: relative;
-  animation: hamburgerMenuAnimation .5s ease-in-out;
+  animation: hamburgerMenuAnimation 0.5s ease-in-out;
 }
 
 .hamburger-menu ul li:hover {
   text-decoration: underline;
 }
 
-.hamburger-menu ul li:nth-child(2){
-  animation-duration: .55s;
+.hamburger-menu ul li:nth-child(2) {
+  animation-duration: 0.55s;
 }
-.hamburger-menu ul li:nth-child(3){
-  animation-duration: .6s;
+.hamburger-menu ul li:nth-child(3) {
+  animation-duration: 0.6s;
 }
-.hamburger-menu ul li:nth-child(4){
-  animation-duration: .65s;
+.hamburger-menu ul li:nth-child(4) {
+  animation-duration: 0.65s;
 }
-.hamburger-menu ul li:nth-child(5){
-  animation-duration: .7s;
+.hamburger-menu ul li:nth-child(5) {
+  animation-duration: 0.7s;
 }
 
-.hamburger-menu a{
+.hamburger-menu a {
   text-decoration: none;
   color: rgb(25, 25, 25);
 }
 
-@keyframes hamburgerMenuAnimation{
-  from{
+@keyframes hamburgerMenuAnimation {
+  from {
     left: -100%;
   }
-  to{
+  to {
     left: 0px;
   }
 }
 
-@keyframes hamburgerMenuSlideDown{
+@keyframes hamburgerMenuSlideDown {
   /* from{
     top: -50%;
   }
   to{
     top: 0%;
   } */
-  from{
+  from {
     height: 0;
   }
-  to{
+  to {
     height: 226px;
   }
 }
