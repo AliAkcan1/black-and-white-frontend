@@ -1,6 +1,9 @@
+import LocationService from "../components/LocationService"
+
 export default function SignUp(){
     return(
         <div className="signup-page">
+            <LocationService />
             <div className="signup-main">
                 <div className="signup-main-header">
                     <h1>Create a new account.</h1>
