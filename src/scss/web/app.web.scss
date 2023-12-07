@@ -70,6 +70,7 @@ nav {
   button{
     margin-left: auto;
     width: 40px;
+    border: black 1px solid;
   }
 }
 
@@ -403,8 +404,13 @@ nav {
   justify-content: center;
 }
 
-/* .login-main-header{
-} */
+.login-main-header{
+  max-width: 400px;
+  h1{
+    font-size: 1.6rem;
+    color: rgb(25, 25, 25);
+  }
+}
 
 .login-main {
   /* border: 1px solid black; */
@@ -415,12 +421,13 @@ nav {
     rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px,
     rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  max-width: 500px;
+  max-width: auto;
   background: transparent;
   backdrop-filter: blur(4px);
   /* box-shadow: 5px 5px; */
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding: 60px 60px;
   margin: 100px auto;
@@ -429,14 +436,16 @@ nav {
 .login-main-header p {
   font-size: 0.85rem;
   color: rgb(25, 25, 25);
-}
-
-.login-main-header h1 {
-  font-size: 2rem;
-  color: rgb(25, 25, 25);
+  
 }
 
 #login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flex-column{
   display: flex;
   flex-direction: column;
 }
@@ -448,7 +457,7 @@ nav {
   padding-left: 15px;
   margin-top: 5px;
   border-radius: 12px;
-  max-width: 400px;
+  max-width: auto;
   border: 2px solid #e7e7e9;
 }
 

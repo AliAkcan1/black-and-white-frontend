@@ -7,7 +7,6 @@ export default function SignUp() {
             <div className="signup-main">
                 <div className="signup-main-header">
                     <h1>Create a new account.</h1>
-                    <p>Already Have An Account? <a href="/login">Login</a> </p>
                 </div>
                 <div className="signup-main-textboxes">
                     <div className="signup-form-container">
@@ -19,7 +18,7 @@ export default function SignUp() {
                                 </div>
                                 <div className="d-signup-surname signup-textbox-cnt">
                                     <label htmlFor="signup-surname" className='signup-label'>Last Name</label>
-                                    <input type="text" placeholder="Surname" id='signup-surname' className="signup-textbox signup-surname" required />
+                                    <input type="text" placeholder="Last Name" id='signup-surname' className="signup-textbox signup-surname" required />
                                 </div>
                             </div>
                             <div className="d-signup-username signup-textbox-cnt">
@@ -56,6 +55,7 @@ export default function SignUp() {
                                 <button className="signup-button">Sign Up</button>
                             </div>
                         </form>
+                        <p>Already have an accout? <a href="/login">Login</a> </p>
                     </div>
                 </div>
             </div>
