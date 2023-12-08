@@ -1,5 +1,5 @@
 import designs from '../assets/data.json'
-import DesignCard from './DesignCard'
+import DesignCard from './DesignCard.tsx'
 
 export default function DesignList(){
     const listDesigns = designs.map(design => {
