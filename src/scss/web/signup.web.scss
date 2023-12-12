@@ -57,6 +57,29 @@
 .d-signup-name, .d-signup-surname, .d-signup-country, .d-signup-city{
 	max-width: 195px;
 }
+
+.country-search-list{
+	display: static;
+	position:relative;
+	z-index: 1;
+	padding: 0;
+	margin: 0;
+	width: 150px;
+	ul{
+		background-color: rgba(125, 125, 250, 0.5);
+		position: absolute;
+		left: 8px;
+		padding: 16px 8px;
+		margin: 0;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		li{
+			color: black;
+		}
+	}
+}
+
 .signup-form {
 	display: grid;
 }
